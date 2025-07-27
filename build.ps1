@@ -8,7 +8,7 @@ function BuildConfigs {
 
     New-Item -Path $targetPath -ItemType Directory | Out-Null
 
-    Copy-Item -Recurse -Force -Path ".\Modules\$target\gamedata" -Destination $targetPath -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\$target\gamedata" -Destination $targetPath -Exclude .bak
 
     $compress = @{
         Path = "$targetPath/*" 
@@ -24,7 +24,7 @@ function BuildGAMMAConfigs {
 
     New-Item -Path $target -ItemType Directory | Out-Null
 
-    Copy-Item -Recurse -Force -Path ".\Modules\GAMMA\gamedata" -Destination $target -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\GAMMA\gamedata" -Destination $target -Exclude .bak
 
     $compress = @{
         Path = "$target/*" 
@@ -40,7 +40,7 @@ function Build3DSSConfigs {
 
     New-Item -Path $target -ItemType Directory | Out-Null
 
-    Copy-Item -Recurse -Force -Path ".\Modules\3DSS\gamedata" -Destination $target -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\3DSS\gamedata" -Destination $target -Exclude .bak
 
     $compress = @{
         Path = "$target/*" 
