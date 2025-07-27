@@ -2,7 +2,7 @@
 
 ![alt text](/doc/images/SEALs_configs.png)
 
-This is the repository of SEALs configs modules. If you looking for the main project head over here [SEAls](https://github.com/strangerism/SEALs)
+This is the repository of SEALs configs modules. If you looking for the main project head over here [SEALs](https://github.com/strangerism/SEALs)
 
 This repos contain my own contribution to the SEALs mod with several configuration module. Each can be installed indipendently.
 

@@ -13,7 +13,7 @@ function BuildConfigs {
     $compress = @{
         Path = "$targetPath/*" 
         CompressionLevel = "Fastest"
-        DestinationPath = "release/SEALs Config - $target.zip"
+        DestinationPath = "release/SEALs_Config-$target.zip"
     }
     Compress-Archive @compress -Force    
 }
@@ -29,7 +29,7 @@ function BuildGAMMAConfigs {
     $compress = @{
         Path = "$target/*" 
         CompressionLevel = "Fastest"
-        DestinationPath = "release/SEALs Config - GAMMA.zip"
+        DestinationPath = "release/SEALs_Config-GAMMA.zip"
     }
     Compress-Archive @compress -Force     
 }
@@ -45,7 +45,7 @@ function Build3DSSConfigs {
     $compress = @{
         Path = "$target/*" 
         CompressionLevel = "Fastest"
-        DestinationPath = "release/SEALs Config - 3DSS.zip"
+        DestinationPath = "release/SEALs_Config-3DSS.zip"
     }
     Compress-Archive @compress -Force         
 }
