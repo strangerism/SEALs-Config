@@ -22,7 +22,7 @@ Here is the list of modules:
 
 - **RWAP**: Applies seals to all weapons that are made or re-packaged in Retrogue's mod [RWAP](https://www.moddb.com/mods/stalker-anomaly/addons/rwap). Use it only if you have **RWAP** installed.
 
-- **manufactorers**: applies manufactorers seals to guns (this is an example config, it only contains few manufactorers)
+- **manufacturers**: applies manufacturers seals to guns (this is an example config, it only contains few manufacturers)
 
 - **mods**: applies mods related seals (this is an example for static configurations)
 
