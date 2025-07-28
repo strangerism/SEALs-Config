@@ -84,6 +84,7 @@ BuildConfigs "RWAP"
 BuildConfigs "ATHI"
 BuildConfigs "BaS"
 BuildConfigs "Zona"
+BuildConfigs "EXP Redux"
 BuildConfigsAllInOne
 
 Remove-Item -Force -Recurse -Path "./build"
