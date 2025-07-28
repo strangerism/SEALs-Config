@@ -22,6 +22,8 @@ Here is the list of modules:
 
 - **RWAP**: Applies seals to all weapons that are made or re-packaged in Retrogue's mod [RWAP](https://www.moddb.com/mods/stalker-anomaly/addons/rwap). Use it only if you have **RWAP** installed.
 
+- **ZONA**: Applies seals to the rarest weapons that can be found in the Zone. This config group is for GAMMA only
+
 - **manufacturers**: applies manufacturers seals to guns (this is an example config, it only contains few manufacturers)
 
 - **mods**: applies mods related seals (this is an example for static configurations)
