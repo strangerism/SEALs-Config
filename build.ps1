@@ -18,6 +18,28 @@ function BuildConfigs {
     Compress-Archive @compress -Force    
 }
 
+function BuildConfigsAllInOne {
+
+    $targetPath = "build/SEALs Config - AllInOne"
+
+    New-Item -Path $targetPath -ItemType Directory | Out-Null
+
+    Copy-Item -Recurse -Force -Path ".\Module\Anomaly\gamedata" -Destination $targetPath -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\GAMMA\gamedata" -Destination $targetPath -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\3DSS\gamedata" -Destination $targetPath -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\RWAP\gamedata" -Destination $targetPath -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\ATHI\gamedata" -Destination $targetPath -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\BaS\gamedata" -Destination $targetPath -Exclude .bak
+    Copy-Item -Recurse -Force -Path ".\Module\Zona\gamedata" -Destination $targetPath -Exclude .bak
+
+    $compress = @{
+        Path = "$targetPath/*" 
+        CompressionLevel = "Fastest"
+        DestinationPath = "release/SEALs_Config-AllInOne.zip"
+    }
+    Compress-Archive @compress -Force    
+}
+
 function BuildGAMMAConfigs {
 
     $target = "build/SEALs Config - GAMMA"
@@ -61,6 +83,7 @@ BuildConfigs "Anomaly"
 BuildConfigs "RWAP"
 BuildConfigs "ATHI"
 BuildConfigs "BaS"
-
+BuildConfigs "Zona"
+BuildConfigsAllInOne
 
 Remove-Item -Force -Recurse -Path "./build"
