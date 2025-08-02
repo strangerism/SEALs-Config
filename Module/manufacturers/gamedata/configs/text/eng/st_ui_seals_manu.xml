@@ -6,24 +6,24 @@
 		<text>Manufacturer</text>
 	</string>				
 	<!-- seal mcm toggle -->
-	<string id ="ui_mcm_seals_franchi_show">
-		<text>Luigi Franchi</text>
+	<string id ="ui_mcm_seals_franchi">
+		<text>Luigi Franchi (franchi)</text>
 	</string>	
-	<string id ="ui_mcm_seals_franchi_show_desc">
+	<string id ="ui_mcm_seals_franchi_desc">
 		<text>Qualifies the weapon manufacturer</text>
 	</string>		
 	<!-- seal mcm toggle -->
-	<string id ="ui_mcm_seals_kalash_show">
-		<text>Kalashnikov</text>
+	<string id ="ui_mcm_seals_kalash">
+		<text>Kalashnikov (kalash)</text>
 	</string>
-	<string id ="ui_mcm_seals_kalash_show_desc">
+	<string id ="ui_mcm_seals_kalash_desc">
 		<text>Qualifies the weapon manufacturer</text>
 	</string>	
 	<!-- seal mcm toggle -->
-	<string id ="ui_mcm_seals_sig_show">
-		<text>Sig Sauer</text>
+	<string id ="ui_mcm_seals_sig">
+		<text>Sig Sauer (sig)</text>
 	</string>	
-	<string id ="ui_mcm_seals_sig_show_desc">
+	<string id ="ui_mcm_seals_sig_desc">
 		<text>Qualifies the weapon manufacturer</text>
 	</string>	
 	<!-- seal caption -->

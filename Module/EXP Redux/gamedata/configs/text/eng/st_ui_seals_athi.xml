@@ -5,10 +5,10 @@
 	<string id ="ui_mcm_menu_seals_custom_layers_mod">
 		<text>Mod</text>
 	</string>
-	<string id ="ui_mcm_seals_athi_show">
-		<text>Athi Armory</text>
+	<string id ="ui_mcm_seals_athi">
+		<text>Athi Armory (athi)</text>
 	</string>
-	<string id ="ui_mcm_seals_athi_show_desc">
+	<string id ="ui_mcm_seals_athi_desc">
 		<text>This seal qualifies those weapons that were made or re-packaged by ATHI</text>
 	</string>	
 	<string id ="ui_seals_athi_caption">

@@ -6,10 +6,10 @@
 		<text>Modlist</text>
 	</string>	
 	<!-- seal mcm toggle -->
-	<string id ="ui_mcm_seals_gamma_show">
-		<text>GAMMA</text>
+	<string id ="ui_mcm_seals_gamma">
+		<text>GAMMA (gamma)</text>
 	</string>
-	<string id ="ui_mcm_seals_gamma_show_desc">
+	<string id ="ui_mcm_seals_gamma_desc">
 		<text>A seal to qualify the weapons that are available in GAMMA (in the game loot tables)</text>
 	</string>	
 	<!-- seal caption -->

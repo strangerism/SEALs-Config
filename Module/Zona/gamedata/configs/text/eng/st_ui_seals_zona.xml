@@ -2,10 +2,10 @@
 
 <string_table>
 
-	<string id ="ui_mcm_seals_zona_show">
-		<text>Zona</text>
+	<string id ="ui_mcm_seals_zona">
+		<text>Zona (zona)</text>
 	</string>
-	<string id ="ui_mcm_seals_zona_show_desc">
+	<string id ="ui_mcm_seals_zona_desc">
 		<text>This seals marks the rarest of the weapons found in the Zone</text>
 	</string>	
 	<string id ="ui_seals_zona_caption">

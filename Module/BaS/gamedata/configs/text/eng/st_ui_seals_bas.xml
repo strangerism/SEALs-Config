@@ -2,10 +2,10 @@
 
 <string_table>
 
-	<string id ="ui_mcm_seals_bas_show">
-		<text>BaS</text>
+	<string id ="ui_mcm_seals_bas">
+		<text>BaS (bas)</text>
 	</string>
-	<string id ="ui_mcm_seals_bas_show_desc">
+	<string id ="ui_mcm_seals_bas_desc">
 		<text>This seal qualifies the weapons which were updated/added in the Boomsticks and Sharpsticks mod</text>
 	</string>	
 	<string id ="ui_seals_bas_caption">
