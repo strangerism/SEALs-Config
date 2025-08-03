@@ -32,23 +32,40 @@ function BuildConfigs {
 
 function BuildConfigsAllInOne {
 
-    $targetPath = "build/SEALs Config - AllInOne"
-    Write-Host Building $targetPath
+    param (
+        [string]$tag
+    )
 
+    $targetPath = "build/SEALs Config - AllInOne-$tag"
+    if (Test-Path $targetPath){
+        Remove-Item -Force -Recurse -Path $targetPath
+    }
+    Write-Host Building $targetPath
     New-Item -Path $targetPath -ItemType Directory | Out-Null
 
     Copy-Item -Recurse -Force -Path ".\Module\Anomaly\gamedata" -Destination $targetPath -Exclude .gitignore
-    Copy-Item -Recurse -Force -Path ".\Module\GAMMA\gamedata" -Destination $targetPath -Exclude .gitignore
-    Copy-Item -Recurse -Force -Path ".\Module\3DSS\gamedata" -Destination $targetPath -Exclude .gitignore
+
+    if ($tag -like "*GAMMA*"){
+        Copy-Item -Recurse -Force -Path ".\Module\GAMMA\gamedata" -Destination $targetPath -Exclude .gitignore
+    }    
+    if ($tag -like "*3DSS*"){
+        Copy-Item -Recurse -Force -Path ".\Module\3DSS\gamedata" -Destination $targetPath -Exclude .gitignore
+    }
+    if ($tag -like "*GAMMA_EXP_Redux*"){
+        Copy-Item -Recurse -Force -Path ".\Module\3DSS_EXP_Redux\gamedata" -Destination $targetPath -Exclude .gitignore
+        Copy-Item -Recurse -Force -Path ".\Module\GAMMA_EXP_Redux\gamedata" -Destination $targetPath -Exclude .gitignore
+    }    
+    
     Copy-Item -Recurse -Force -Path ".\Module\RWAP\gamedata" -Destination $targetPath -Exclude .gitignore
     Copy-Item -Recurse -Force -Path ".\Module\ATHI\gamedata" -Destination $targetPath -Exclude .gitignore
     Copy-Item -Recurse -Force -Path ".\Module\BaS\gamedata" -Destination $targetPath -Exclude .gitignore
     Copy-Item -Recurse -Force -Path ".\Module\Zona\gamedata" -Destination $targetPath -Exclude .gitignore
+    Copy-Item -Recurse -Force -Path ".\Module\Strogglet\gamedata" -Destination $targetPath -Exclude .gitignore
 
     $compress = @{
         Path = "$targetPath/*" 
         CompressionLevel = "Fastest"
-        DestinationPath = "release/SEALs_Config-AllInOne.zip"
+        DestinationPath = "release/SEALs_Config-AllInOne-$tag.zip"
     }
     Compress-Archive @compress -Force    
 }
@@ -96,12 +113,13 @@ BuildConfigs "manufacturers"
 # BuildConfigs "mods"
 BuildConfigs "Anomaly"
 BuildConfigs "GAMMA" "0.9.4"
-BuildConfigs "3DSS" "3.11"
+BuildConfigs "3DSS" "3.12"
 BuildConfigs "RWAP"
 BuildConfigs "ATHI"
 BuildConfigs "BaS"
 BuildConfigs "Zona"
-BuildConfigs "EXP Redux"
-BuildConfigsAllInOne
+BuildConfigsAllInOne "Anomaly"
+BuildConfigsAllInOne "GAMMA-0.9.4_3DSS-3.12"
+BuildConfigsAllInOne "GAMMA_EXP_Redux"
 
 Remove-Item -Force -Recurse -Path "./build"
