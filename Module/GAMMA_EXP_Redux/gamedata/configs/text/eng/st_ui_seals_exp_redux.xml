@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+
+	<string id ="ui_mcm_seals_exp_redux">
+		<text>GAMMA EXP Edition Redux (exp_redux)</text>
+	</string>
+	<string id ="ui_mcm_seals_exp_redux_desc">
+		<text>This seal qualifies those weapons that were exclusively added by the GAMMA EXP Edition Redux modlist </text>
+	</string>	
+	<string id ="ui_seals_exp_redux_caption">
+		<text>EXP Redux</text>
+	</string>			
+</string_table>  

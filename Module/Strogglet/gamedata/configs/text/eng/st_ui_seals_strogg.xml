@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+
+	<string id ="ui_mcm_seals_strogg">
+		<text>Strogglet (strogg)</text>
+	</string>
+	<string id ="ui_mcm_seals_strogg_desc">
+		<text>Marks those weapons that comes from Strogglet's mods</text>
+	</string>	
+	<string id ="ui_seals_strogg_caption">
+		<text>Strogglet Cache</text>
+	</string>			
+</string_table>  
