@@ -14,7 +14,11 @@ Here is the list of modules:
 
 - **3DSS**: Applies 3DSS seals to all weapons that support this kind of scopes (this is a blank prefab configuration ready to be compiled with data).
 
+    this module is also released as a versioned distribuitable which is already compiled from a particular version of 3DSS. This module can also be updated with the generation tools.
+
 - **GAMMA**: Applies seals to all available GAMMA weapons, such weapons are present in loadouts and can drop in game (this is a blank prefab configuration ready to be compiled with data).
+
+    this module is also released as a versioned distribuitable which is already compiled from a particular version of GAMMA. This module can also be updated with the generation tools.
 
 - **BaS**: Applies seals to all weapons that have been updated/added in the in the Boomsticks and Sharpsticks mod [BaS](https://www.moddb.com/mods/stalker-anomaly/addons/boomsticks-and-sharpsticks). Use it only if you have **BaS** installed.
 
@@ -23,6 +27,8 @@ Here is the list of modules:
 - **RWAP**: Applies seals to all weapons that are made or re-packaged in Retrogue's mod [RWAP](https://www.moddb.com/mods/stalker-anomaly/addons/rwap). Use it only if you have **RWAP** installed.
 
 - **ZONA**: Applies seals to the rarest weapons that can be found in the Zone. This config group is for GAMMA only
+
+- **AllInOne**: A distribuitable that is packed with all modules above, for convenience.
 
 - **manufacturers**: applies manufacturers seals to guns (this is an example config, it only contains few manufacturers)
 
